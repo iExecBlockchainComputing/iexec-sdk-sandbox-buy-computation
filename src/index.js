@@ -160,7 +160,7 @@ const buyComputation = (iexec) => async () => {
          * this resource is shared and may be throttled, it should not be used for production applications
          * use "prod-v8-bellecour.main.pools.iexec.eth" to switch to a production ready workerpool
          */
-        workerpool: "v8-learn-prod.pools.iexec.eth",
+        workerpool: "v8-learn-prod.main.pools.iexec.eth",
       });
     const workerpoolOrder =
       workerpoolOrders && workerpoolOrders[0] && workerpoolOrders[0].order;
