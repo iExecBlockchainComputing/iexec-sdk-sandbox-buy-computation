@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "iexec": "^8.6.1"
+    "iexec": "^8.10.1"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
