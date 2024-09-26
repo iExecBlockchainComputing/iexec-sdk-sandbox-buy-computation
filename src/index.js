@@ -155,7 +155,12 @@ const buyComputation = (iexec) => async () => {
     const { orders: workerpoolOrders } =
       await iexec.orderbook.fetchWorkerpoolOrderbook({
         category,
-        workerpool: "prod-v8-bellecour.main.pools.iexec.eth", // use iExec official workerpool
+        /**
+         * this demo uses a workerpool offering free computing power dedicated to learning
+         * this resource is shared and may be throttled, it should not be used for production applications
+         * use "prod-v8-bellecour.main.pools.iexec.eth" to switch to a production ready workerpool
+         */
+        workerpool: "v8-learn-prod.pools.iexec.eth",
       });
     const workerpoolOrder =
       workerpoolOrders && workerpoolOrders[0] && workerpoolOrders[0].order;
